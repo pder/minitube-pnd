@@ -4,3 +4,6 @@
 [submodule "minitube"]
 	path = minitube
 	url = git://gitorious.org/minitube/minitube.git
+[submodule "mplayer2-build"]
+	path = mplayer2-build
+	url = git://github.com/pder/mplayer2-build.git

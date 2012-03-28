@@ -1,3 +1,6 @@
+PND_MAKE=$(PNDSDK)/../sdk_utils/pnd_make.sh
+STRIP=$(PNDSDK)/bin/arm-none-linux-gnueabi-strip
+
 pnd:
 	rm -rf tmp
 	mkdir -p tmp/bin
@@ -10,3 +13,7 @@ pnd:
 	cp ../mplayer2-build/build_libs/lib/libdvdread.so.4 tmp/lib
 	cp build_phonon-mplayer/mplayer/phonon_mplayer.so tmp/plugins/phonon_backend
 	cp pandora/* tmp
+	$(STRIP) tmp/bin/*
+	$(STRIP) tmp/lib/*
+	$(STRIP) tmp/plugins/phonon_backend/*
+	$(PND_MAKE) -p minitube_$(VER).pnd -d tmp -x tmp/PXML.xml -i pandora/icon.png -c

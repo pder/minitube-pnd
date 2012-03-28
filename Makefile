@@ -12,7 +12,7 @@ pnd:
 	cp ../mplayer2-build/build_libs/lib/libdvdnav.so.4 tmp/lib
 	cp ../mplayer2-build/build_libs/lib/libdvdread.so.4 tmp/lib
 	cp build_phonon-mplayer/mplayer/phonon_mplayer.so tmp/plugins/phonon_backend
-	cp pandora/* tmp
+	cp -r pandora/* tmp
 	$(STRIP) tmp/bin/*
 	$(STRIP) tmp/lib/*
 	$(STRIP) tmp/plugins/phonon_backend/*

@@ -2,11 +2,11 @@
 SET(CMAKE_SYSTEM_NAME Linux)
 
 # specify the cross compiler
-SET(CMAKE_C_COMPILER   /media/wd_1TB/paul/pandora/pandora-oe-environment/tmp/angstrom.5/cross/armv7a/bin/arm-angstrom-linux-gnueabi-gcc)
-SET(CMAKE_CXX_COMPILER /media/wd_1TB/paul/pandora/pandora-oe-environment/tmp/angstrom.5/cross/armv7a/bin/arm-angstrom-linux-gnueabi-g++)
+SET(CMAKE_C_COMPILER   /home/pauld/pandora/pandora-oe-environment/tmp/angstrom.5/cross/armv7a/bin/arm-angstrom-linux-gnueabi-gcc)
+SET(CMAKE_CXX_COMPILER /home/pauld/pandora/pandora-oe-environment/tmp/angstrom.5/cross/armv7a/bin/arm-angstrom-linux-gnueabi-g++)
 
 # where is the target environment 
-SET(CMAKE_FIND_ROOT_PATH  /home/pder/pandora-dev/arm-2011.03/)
+SET(CMAKE_FIND_ROOT_PATH  /home/pauld/pandora-dev/arm-2011.03/)
 
 # search for programs in the build host directories
 SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM BOTH)

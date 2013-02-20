@@ -1,6 +1,6 @@
 [submodule "phonon-mplayer"]
 	path = phonon-mplayer
-	url = git://anongit.kde.org/phonon-mplayer
+	url = git://github.com/pder/phonon-mplayer.git
 [submodule "minitube"]
 	path = minitube
 	url = git://gitorious.org/minitube/minitube.git
